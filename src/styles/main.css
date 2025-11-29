@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Avenir Next";
+    padding-top: 80px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, #4d4d4d 0%, #333 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 0 24px;
+}
+
+/*menu lateral */
+.menu-toggle {
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+ /*linhas do menu lateral*/
+.menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+/*seção hero*/
+/*Container principal com imagem de fundo*/
+.hero-section{
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+
+/*Imagem de fundo usando ::before*/
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/woman_science.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    opacity: 45%;
+}
+
+/*Container do texto (fica na frente da imagem)*/
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 240px;
+    padding-left: 20px;
+}
+
+/*Barra verde à esquerda do texto*/
+.hero-content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    background-color: #8cc540;
+}
+
+/*Título*/
+.hero-content h1 {
+    font-family: "Avenir Next";
+    font-size: 32px;
+    font-weight: 900;
+    color: #4d4d4d;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+/*Parágrafo*/
+.hero-content p{
+    font-family: "Avenir Next";
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: normal;
+    margin: 0;
+}
+
+/*Seção Destaques*/
+
+/*Container principal*/
+.destaques-section {
+    padding: 40px 24px;
+}
+
+/*Título "Destaques" com barra verde*/
+.destaques-title {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.destaques-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #8cc540;
+}
+
+.destaques-title h2 {
+    font-family: "Avenir Next";
+    font-size: 24px;
+    font-weight: 900;
+    color: #4d4d4d;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/*Card Individual*/
+.card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+/* Conteúdo do card (lado esquerdo)*/
+.card-content {
+    flex: 1;
+    padding-right:240px;
+    max-width: 100%;
+}
+
+/*Título do card com barra verde*/
+.card-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-left: 16px;
+    margin-bottom: 10px;
+}
+
+.card-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #8cc540;
+}
+
+.card-title h3 {
+    font-family: "Avenir Next";
+    font-size: 32px;
+    line-height: normal;
+    color: #4d4d4d;
+    margin: 0;
+    font-weight: 275;
+}
+
+.card-title .bold {
+    font-weight: 900;
+}
+
+/*Subtítulo do card*/
+.card-subtitle {
+    font-family: "Avenir Next";
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    margin-bottom: 24px;
+}
+
+/* Botão "Saiba Mais*/
+.btn-saiba-mais {
+    background-color: #8cc540;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-family: "Avenir Next";
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/*Imagem do card (lado direito)*/
+.card-image {
+    position: absolute;
+    right: 0;
+    transform: translate(-10%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 218px;
+    height: 329px;
+    pointer-events: none;
+}
+
+/* Imagens específicas*/
+.freeflow-image {
+    background-image: url("../assets/freeflow-image-redimena.png");
+}
+
+.spherapro-image {
+    background-image: url("../assets/spherapro_image.png");
+}
+
+/*Botão "Ver mais"*/
+.btn-ver-mais {
+    background-color: #8cc540;
+    color: white;
+    border: none;
+    padding: 12px 36px;
+    font-family: "Avenir Next";
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/*Seção 40 anos*/
+.years-section {
+    margin-top: 40px;
+    padding: 0 24px;
+}
+
+.years-container {
+    background-color: #4d4d4d;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/*Imagem d grupo de idosos*/
+.years-image {
+    background-image: url("../assets/group_years_elders.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 500px;
+    height: 240px;
+
+}
+
+/*Seção HPBIO*/
+.news-section { 
+    padding: 40px 24px; /*padding: 0 24px;*/
+    /*margin-top 40;*/
+}
+
+/*Título "News Hpbio com barra verde"*/
+.news-title {
+    position: relative;
+    padding-left: 30px; 
+    margin-bottom: 24px;
+}
+
+.news-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #8cc540;
+}
+
+.news-title h2 {
+    font-family: "Avenir Next";
+    font-size: 24px;
+    font-weight: 900;
+    color: #4d4d4d;
+    margin: 0;
+}
+
+/*Card de notícias*/
+.news-card {
+    background-color: #fcfcfc;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+/*Imagem notícias*/
+.news-image {
+    background-image: url("../assets/idosos-abraco.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+/*espaçamento textos container*/
+.news-container{
+    padding: 24px 24px;
+    margin: 0;
+    border: 1px solid #ededed;
+    border-radius: 0 0 8px 8px;
+}
+
+/*texto de notícias*/
+.news-text {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+/*Link "Leia mais" com seta*/
+.btn-leia-mais {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #4d4d4d;
+    font-family: "Avenir Next";
+    font-size: 18px;
+    font-weight: 600;
+    transition: gap 0.3s ease;
+}
+
+.btn-leia-mais:hover {
+    gap: 12px;
+}
+
+.btn-leia-mais .arrow {
+    color: #8cc540;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.btn-leia-mais:hover {
+    transform: translateX(4px); /*Move a seta para direita*/
+}
+
+/*Botão "Ver todos*/
+.btn-ver-todos {
+    background-color: #8cc540;
+    color: #fcfcfc;
+    border: none;
+    padding: 12px 36px;
+    font-family: "Avenir Next";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 30px;
+    cursor: pointer;
+}
