@@ -152,14 +152,20 @@ body {
     background-color: #e5e5e5;
     border-radius: 10px;
     padding: 30px;
-    margin-bottom: 40px;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.card-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
 }
 
 /* Conteúdo do card (lado esquerdo)*/
 .card-content {
     flex: 1;
-    padding-right:240px;
-    max-width: 100%;
+    max-width: 184px;
 }
 
 /*Título do card com barra verde*/
@@ -225,10 +231,11 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 218px;
-    height: 329px;
+    height: 100%;
     pointer-events: none;
+    padding: 21px 24px 21px 0;
 }
+.card-image img {max-height: 100%};
 
 /* Imagens específicas*/
 .freeflow-image {
@@ -250,6 +257,7 @@ body {
     font-weight: 600;
     border-radius: 30px;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 /*Seção 40 anos*/
@@ -289,7 +297,6 @@ body {
 .news-title {
     position: relative;
     padding-left: 30px; 
-    margin-bottom: 24px;
 }
 
 .news-title::before {
@@ -385,4 +392,31 @@ body {
     line-height: normal;
     border-radius: 30px;
     cursor: pointer;
+}
+
+.btn-ver-todos--desktop {
+    display: none;
+}
+
+.news-title-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+@media screen and (min-width:768px) {
+    .card-list .card {
+        width: calc(50% - 20px);
+    }
+    .btn-ver-mais-wrapper {
+        text-align: center;
+    }
+    
+    .btn-ver-todos--desktop {
+        display: inline-block;
+    }
+    
+    .btn-ver-todos--mobile {
+        display: none;
+    }
 }
