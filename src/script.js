@@ -13,4 +13,16 @@ menuLinks.forEach(link => {
         sideMenu.classList.remove('active');
         menuToggle.classList.remove('active');
     });
-})
+});
+
+//funcionalidade tab
+const tabs = document.querySelectorAll('.tab');
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () => {
+        //remove active de todas
+        tabs.forEach(t => t.classList.remove('active'));
+        //Adiciona active na clicada
+        tab.classList.add('active');
+    });
+});

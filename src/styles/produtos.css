@@ -83,6 +83,7 @@
     padding: 40px 24px;
     font-family: "Avenir Next";
     color: #4d4d4d;
+    background-color: #fcfcfc;
 }
 
 .card-sphera {
@@ -140,6 +141,50 @@
 
 .second-main-section {
     padding: 40px 24px;
+}
+
+.tab-list {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    overflow-x: auto; /*permite scroll horizontal*/
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; /*scroll suave no iOS*/
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.tab {
+    flex-shrink: 0; /*impede que as abas encolham*/
+    padding: 12px 24px;
+    background-color: #fcfcfc;
+    color: #4d4d4d;
+    font-family: "Avenir Next";
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap; /* texto não quebra*/
+    transition: background-color 0.3s ease;
+    border-bottom: 3px solid transparent; /* borda transparente por padrão */
+}
+
+.tab.hover {
+    background-color: #74a335;
+    border-bottom: 3px solid #4d4d4d;
+}
+
+.tab.container::-webkit-scrollbar-thumb {
+    height: 4px;
+}
+
+.tab.cotainer::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.tab.active {
+    border-bottom: 3px solid #8CC540;
+    color: #8CC540;
 }
 
 .componentes-container {
