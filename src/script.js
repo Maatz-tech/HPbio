@@ -26,3 +26,24 @@ tabs.forEach(tab =>{
         tab.classList.add('active');
     });
 });
+
+// Carrossel de imagens
+const carouselImages = document.querySelectorAll('.carousel-image');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+let currentIndex = 0;
+
+function showImage(index) {
+    carouselImages.forEach(img => img.classList.remove('active'));
+    carouselImages[index].classList.add('active');
+}
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
+    showImage(currentIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % carouselImages.length;
+    showImage(currentIndex);
+});
