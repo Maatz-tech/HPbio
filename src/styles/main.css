@@ -1,9 +1,131 @@
 /* Fontes customizadas */
+/* Avenir Next Cyr - Todas as variações */
 @font-face {
-    font-family: "Avenir Next";
-    src: url("../assets/Avenir Next/Avenir Next.ttc") format("truetype");
-    font-weight: normal;
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Regular.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Italic.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Thin.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-ThinItalic.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Light.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-LightItalic.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Medium.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-MediumItalic.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Demi.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Demi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-DemiItalic.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-DemiItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Bold.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-BoldItalic.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Heavy.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-HeavyItalic.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-UltraLight.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/avenir-font-hpbio/font/AvenirNextCyr-UltraLightIt.woff2') format('woff2'),
+         url('../assets/avenir-font-hpbio/font/AvenirNextCyr-UltraLightIt.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
 }
 
 @font-face {
@@ -111,7 +233,7 @@
 }
 
 body {
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     padding-top: 80px;
 }
 
@@ -203,7 +325,7 @@ body {
 .menu-list a {
     color: white;
     text-decoration: none;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 18px;
     font-weight: 400;
     transition: color 0.3s ease;
@@ -323,7 +445,7 @@ body {
 
 /*Título*/
 .hero-content h1 {
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 32px;
     font-weight: 900;
     color: #4d4d4d;
@@ -333,7 +455,7 @@ body {
 
 /*Parágrafo*/
 .hero-content p{
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 14px;
     font-weight: 400;
     color: #4d4d4d;
@@ -366,7 +488,7 @@ body {
 }
 
 .destaques-title h2 {
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 24px;
     font-weight: 900;
     color: #4d4d4d;
@@ -420,21 +542,31 @@ body {
 }
 
 .card-title h3 {
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 32px;
     line-height: normal;
     color: #4d4d4d;
-    margin: 0;
+    margin: -5px;
     font-weight: 275;
 }
 
+.carousel-vector {
+    position: absolute;
+    bottom: 80px;
+    right: -250px;
+    width: 200%;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 3;
+    transform: scalex(-1);
+}
 .card-title .bold {
     font-weight: 900;
 }
 
 /*Subtítulo do card*/
 .card-subtitle {
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 14px;
     font-weight: 400;
     color: #4d4d4d;
@@ -447,7 +579,7 @@ body {
     color: white;
     border: none;
     padding: 12px 32px;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 16px;
     font-weight: 600;
     border-radius: 30px;
@@ -483,7 +615,7 @@ body {
     color: white;
     border: none;
     padding: 12px 36px;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 16px;
     font-weight: 600;
     border-radius: 30px;
@@ -494,17 +626,34 @@ body {
 /*Seção 40 anos*/
 .years-section {
     margin-top: 40px;
-    padding: 0 24px;
+    background: linear-gradient(90deg, #4d4d4d 0%, #333 100%);
 }
 
 .years-container {
-    background-color: #4d4d4d;
     border-radius: 20px;
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+}
+
+.vetor-topo-2 {
+    position: relative;
+    left: 0;
+    top: auto;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.base-vetor-2 {
+    position: relative;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /*Imagem d grupo de idosos*/
@@ -541,7 +690,7 @@ body {
 }
 
 .news-title h2 {
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 24px;
     font-weight: 900;
     color: #4d4d4d;
@@ -575,7 +724,7 @@ body {
 .news-image-text {
     position: absolute;
     color: white;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 18px;
     font-weight: 600;
     margin: 0;
@@ -607,7 +756,7 @@ body {
     gap: 8px;
     text-decoration: none;
     color: #4d4d4d;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 18px;
     font-weight: 600;
     transition: gap 0.3s ease;
@@ -633,7 +782,7 @@ body {
     color: #fcfcfc;
     border: none;
     padding: 12px 36px;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
@@ -664,7 +813,7 @@ body {
 }
 
 .certificacao-title {
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     color: #4d4d4d;
     font-weight: 700;
     display: flex;
@@ -679,7 +828,7 @@ body {
 .certificacao-subtitle {
     font-size: 16px;
     display: flex;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     text-align: center;
     color: #4d4d4d;
     font-weight: 400;
@@ -712,14 +861,14 @@ body {
 
 .certificacao-subtitle-ce {
     font-size: 14px;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-weight: 600;
     color: #4d4d4d;
 }
 
 .certifcacao-subtitle-sphera-componente {
     font-weight: 400;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     color: #4d4d4d;
     font-size: 14px;
     white-space: nowrap;
@@ -730,6 +879,14 @@ body {
     background-color: #4d4d4d;
 }
 
+.footer-topo {
+    position: relative;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .footer-logo {
     display: flex;
     justify-content: center;
@@ -745,7 +902,7 @@ body {
 .footer-content-contatos {
     display: inline-flex;
     font-size: 18px;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-weight: 700;
     justify-content: space-between;
     color: white;
@@ -763,7 +920,7 @@ body {
 .footer-content-navegue {
     display: inline-flex;
     font-size: 18px;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-weight: 700;
     justify-content: space-between;
     color: white;
@@ -806,7 +963,7 @@ body {
     background-color: #444;
     color: white;
     font-size: 14px;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-weight: 400;
 }
 
@@ -837,5 +994,16 @@ body {
     .footer-logo {
     justify-content:left;
     align-items: center;        
+    }
+
+    .carousel-vector {
+    position: absolute;
+    bottom: 0px;
+    right: -0px;
+    width: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 3;
+    transform: scalex(1);
     }
 }

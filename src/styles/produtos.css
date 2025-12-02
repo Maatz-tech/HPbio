@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 146px;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     padding-left: 30px;
     margin-bottom: 8px;
     color: #4d4d4d;
@@ -41,7 +41,7 @@
 .section-spherapro-text {
     display: flex;
     padding: 40px 24px 0px 24px;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     color: #4d4d4d;
 }
 
@@ -75,13 +75,13 @@
 }
 
 .sheprapro-content-text {
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-weight: 400;
 }
 
 .conteudo-section {
     padding: 40px 24px;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     color: #4d4d4d;
     background-color: #fcfcfc;
 }
@@ -119,7 +119,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 40px 24px;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     color: #4d4d4d;
     font-size: 14px;
 }
@@ -159,7 +159,7 @@
     padding: 12px 24px;
     background-color: #fcfcfc;
     color: #4d4d4d;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
@@ -190,7 +190,7 @@
 .componentes-container {
     display: flex;
     flex-direction: column;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     font-size: 14px;
     color: #4d4d4d;
 }
@@ -227,7 +227,7 @@
 .precisao-content {
     display: flex;
     flex-direction: column;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next Cyr";
     color: #4d4d4d;
 }
 
