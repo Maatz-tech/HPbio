@@ -31,7 +31,10 @@ tabs.forEach(tab =>{
 const carouselImages = document.querySelectorAll('.carousel-image');
 const prevBtn = document.querySelector('.carousel-btn.prev');
 const nextBtn = document.querySelector('.carousel-btn.next');
-let currentIndex = 0;
+
+if (carouselImages.length > 0 && prevBtn && nextBtn) {
+    let currentIndex = 0;
+
 
 function showImage(index) {
     carouselImages.forEach(img => img.classList.remove('active'));
@@ -47,6 +50,7 @@ nextBtn.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % carouselImages.length;
     showImage(currentIndex);
 });
+}
 
 // Dropdown menu Neurocirurgia
 const neurocirurgiaItem = document.querySelector('.side-menu-neurocirurgia-content');

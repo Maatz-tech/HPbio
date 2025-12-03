@@ -251,6 +251,58 @@ body {
     padding: 0 24px;
 }
 
+.menu-desktop {
+    display: none;
+    margin: 0 auto;
+    align-items: center;
+    gap: 32px;
+    font-family: "Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+}
+
+
+.menu-desktop li {
+    display: inline-block;
+}
+
+.menu-desktop a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+.menu-language {
+    display: none;
+    margin: 0 auto;
+    align-items: center;
+    gap: 12px;
+    font-family: "Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+}
+
+.menu-language a {
+    color: white;
+    text-decoration: none;
+    transition: border-color 0.3s ease;
+    line-height: 1;
+}
+
+.menu-language li {
+    display: flex;
+    align-items: center;
+}
+
+.menu-language .separator {
+    color: #8cc540;
+    text-decoration: none;
+    line-height: 1;
+}
+
 /*menu lateral */
 .menu-toggle {
     width: 24px;
@@ -266,8 +318,8 @@ body {
 
  /*linhas do menu lateral*/
 .menu-toggle span {
-    width: 100%;
-    height: 3px;
+    width: 3px;
+    height: 100%;
     background: white;
     border-radius: 3px;
 }
@@ -295,11 +347,48 @@ body {
 }
 
 .side-menu-neurocirurgia-content {
-    display: block;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
+    cursor: pointer;
+}
+
+/* Seta criada com ::after */
+.side-menu-neurocirurgia-content::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/keyboard_arrow_down.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* Gira a seta quando ativo */
+.side-menu-neurocirurgia-content.active::after {
+    transform: rotate(180deg);
+}
+
+/* Link */
+.side-menu-neurocirurgia-content > a {
+    flex: 1;
+}
+
+/* Submenu */
+.dropdown-menu {
+    display: none;
+    width: 100%;
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 8px;
+    flex-basis: 100%;
+}
+
+.side-menu-neurocirurgia-content.active .dropdown-menu {
+    display: block;
 }
 
 .side-menu-neurocirurgia-content > a {
@@ -1063,6 +1152,7 @@ body {
 }
 
 @media screen and (min-width:768px) {
+    
     .image-carousel {
         max-width: 1440px;
         display: flex;
@@ -1138,4 +1228,30 @@ body {
         justify-content: center;
     }
 
+}
+
+@media screen and (min-width:1440px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-desktop, .menu-language {
+        display: flex;
+    }
+
+    .header {
+        justify-content:space-evenly;
+    }
+
+    .logo {
+        margin-left: 40px;
+    }
+
+    .destaques-title {
+    margin-left: 270px;
+    }
+        
+    .news-title {
+    margin-left: 270px;
+}
 }

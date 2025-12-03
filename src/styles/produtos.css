@@ -245,3 +245,20 @@
 .precisao-content img {
     margin-top: 40px;
 }
+
+@media screen and (min-width:768px) {
+    .hero-section-sphera {
+        height: 650px;
+        width: 100%;
+        flex-direction: row;
+        font-size: 80px;
+
+    }
+
+    .spherapro-image-main {
+        height: 450px;
+        object-fit: contain;
+        width: 100%;
+        margin: auto;
+    }
+}
