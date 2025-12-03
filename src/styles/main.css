@@ -295,10 +295,52 @@ body {
 }
 
 .side-menu-neurocirurgia-content {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    position: relative;
+}
 
+.side-menu-neurocirurgia-content > a {
+    flex: 0; /* Não cresce */
+}
+
+/* Esconde o submenu por padrão */
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    width: 100%;
+    flex-basis: 100%;
+}
+
+/* Mostra o submenu quando o pai tem classe 'active' */
+.side-menu-neurocirurgia-content.active .dropdown-menu {
+    display: block;
+}
+
+/* Estilo dos links do submenu */
+.dropdown-menu li {
+    margin: 8px 0;
+}
+
+.dropdown-menu a {
+    font-size: 16px;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Anima a seta */
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.side-menu-neurocirurgia-content.active .dropdown-arrow {
+    transform: rotate(180deg);
 }
 
 .side-menu-gastroentereologia-content {
@@ -511,9 +553,10 @@ body {
 }
 
 .card-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
 }
 
 /* Conteúdo do card (lado esquerdo)*/
@@ -662,6 +705,7 @@ body {
     background-image: url("../assets/group_years_elders.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     width: 100%;
     max-width: 500px;
     height: 220px;
@@ -932,10 +976,11 @@ body {
 .footer-topo {
     position: relative;
     left: 0;
-    bottom: auto;
+    bottom: -1px;
     width: 100%;
     height: auto;
     display: block;
+    transform: scalex(-1);
 }
 .footer-logo {
     display: flex;
@@ -1018,9 +1063,23 @@ body {
 }
 
 @media screen and (min-width:768px) {
+    .image-carousel {
+        max-width: 1440px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 32px;
+    }
+
     .card-list .card {
         width: calc(50% - 20px);
+        max-width: 640px;
     }
+
+    .destaques-section {
+        margin: auto;
+    }
+
     .btn-ver-mais-wrapper {
         text-align: center;
     }
@@ -1056,4 +1115,27 @@ body {
     z-index: 3;
     transform: scalex(1);
     }
+
+    .years-container {
+    border-radius: 0px;
+    padding: 40px;
+    flex-direction: row;
+    right: 0;
+    justify-content: center;
+    }
+
+    .years-image {
+        width: 100%;
+        max-width: 733px;
+        height: 492px;
+    }
+
+    .news-card-list {
+        justify-content: center;
+    }
+
+    .certificacao-card-list {
+        justify-content: center;
+    }
+
 }

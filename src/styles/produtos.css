@@ -18,7 +18,7 @@
 }
 
 .hero-content-title h3 {
-    margin: -8px;
+    margin: -6px;
     font-size: 32px;
 }
 
@@ -103,6 +103,10 @@
 
 .card-list-sphera img {
     width: 48px;
+}
+
+.sphera-title {
+    font-weight: 275;
 }
 
 /* Remove borda direita dos cards da última coluna */

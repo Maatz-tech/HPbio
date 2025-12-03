@@ -47,3 +47,14 @@ nextBtn.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % carouselImages.length;
     showImage(currentIndex);
 });
+
+// Dropdown menu Neurocirurgia
+const neurocirurgiaItem = document.querySelector('.side-menu-neurocirurgia-content');
+
+neurocirurgiaItem.addEventListener('click', function(e) {
+    // Só ativa/desativa se clicar no item principal, não nos links do submenu
+    if (e.target.tagName !== 'A' || e.target.getAttribute('href') === '#neurocirurgia') {
+        e.preventDefault();
+        this.classList.toggle('active');
+    }
+});
