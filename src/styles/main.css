@@ -1069,7 +1069,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    transform: scalex(-1);
 }
 .footer-logo {
     display: flex;

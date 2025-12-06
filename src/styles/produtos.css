@@ -196,7 +196,8 @@
     display: flex;
     flex-direction: column;
     font-family: "Avenir Next Cyr";
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 16px;
     color: #4d4d4d;
 }
 
@@ -236,7 +237,7 @@
     color: #4d4d4d;
 }
 
-.precisao-content h3 {
+.precisao-content-text {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 24px;
@@ -252,13 +253,113 @@
         width: 100%;
         flex-direction: row;
         font-size: 80px;
+        padding: 120px 120px 80px 120px;
+        align-items: center;
+    }
 
+    .hero-section-container {
+        flex: 1;
+        max-width: 50%;
+        justify-content: center;
+        align-items: center;
     }
 
     .spherapro-image-main {
         height: 450px;
         object-fit: contain;
-        width: 100%;
+        width: 50%;
         margin: auto;
     }
+
+    .hero-content-title h3{
+        font-size: 80px;
+    }
+
+    .section-spherapro-text {
+        padding: 80px 120px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cards-check {
+        display: flex;
+        flex: 1;
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-check:first-child {
+        margin: 0;
+    }
+
+    .card-check:last-child {
+        margin: 0;
+    }
+
+    .conteudo-section {
+        padding: 80px 120px;
+    }
+
+    .wrapper-sphera {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .card-list-sphera {
+        flex-wrap: nowrap;
+    }
+
+    .card-sphera {
+        border: none;
+    }
+
+.second-main-section {
+        padding: 80px 120px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .componentes-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .componentes-container img {
+        margin-bottom: 0px;
+        width: 50%;
+        max-height: 400px;
+        object-fit: contain;
+    }
+
+    .precisao-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .precisao-content-1 {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+    .precisao-content-text {
+        flex: 1;
+        width: 40%;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    .precisao-content h3 {
+        margin-bottom: 24px;
+    }
+
+    .precisao-content-1 img {
+        width: 40%;
+        max-height: 400px;
+        object-fit: contain;
+        margin: 0;
+    }
+    
 }
