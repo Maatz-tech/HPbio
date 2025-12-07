@@ -1,0 +1,119 @@
+.videos-title-container {
+    padding: 64px 24px 40px 24px;
+    background: linear-gradient(270deg, #CCC 0%, #FFF 100%)
+}
+
+.videos-title-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    gap: 10px;
+}
+
+.videos-title-content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #8cc540;
+}
+
+.videos-title-content h2 {
+    font-family: "Avenir Next Cyr";
+    font-size: 40px;
+    line-height: normal;
+    color: #4d4d4d;
+    margin: -5px;
+    font-weight: 900;
+}
+
+.videos-section {
+    padding: 40px 24px;
+}
+
+.videos-intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Avenir Next Cyr";
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.videos-intro-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-videos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    list-style: none;
+}
+
+.card-videos-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-videos-image {
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+}
+
+.card-videos h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    padding-top: 24px;
+}
+
+.videos-section span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ededed;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    opacity: 1;
+}
+
+.videos-observacao {
+    font-size: 16px;
+    font-family: "Avenir Next Cyr";
+    font-weight: 400;
+    color: #4d4d4d;
+}
+
+@media screen and (min-width:768px) {
+    .videos-title-container {
+    padding: 100px 120px 100px 120px;
+    }
+
+    .videos-intro-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .videos-intro-image {
+        max-width: 350px;
+    }
+
+    .card-videos-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .videos-section {
+        padding: 80px 120px;
+    }
+}

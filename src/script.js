@@ -62,3 +62,24 @@ neurocirurgiaItem.addEventListener('click', function(e) {
         this.classList.toggle('active');
     }
 });
+
+
+// Funcionalidade das abas expertise
+document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+        // Remove 'active' de todas as abas
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        
+        // Adiciona 'active' na aba clicada
+        this.classList.add('active');
+        
+        // Oculta todo o conteúdo
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.remove('active');
+        });
+        
+        // Mostra o conteúdo correspondente
+        const tabId = this.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+    });
+});

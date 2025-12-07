@@ -203,7 +203,7 @@
 
 .componentes-container img {
     margin-bottom: 40px;
-}
+}   
 
 .componentes-container span {
     display: block;
@@ -237,13 +237,20 @@
     color: #4d4d4d;
 }
 
-.precisao-content-text {
+.precisao-content h3{
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 24px;
 }
 
+.precisao-content-text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
 .precisao-content img {
+    width: 100%;
     margin-top: 40px;
 }
 
