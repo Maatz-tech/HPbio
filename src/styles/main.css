@@ -1186,12 +1186,32 @@ body {
     }
 
     .footer {
-    padding: 40px 40px;
+        padding: 40px 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        align-items: start;
     }
 
     .footer-logo {
-    justify-content:left;
-    align-items: center;        
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer-container span {
+        display: none;
+    }
+
+    .social-buttons {
+        justify-content: flex-end;
+        align-items: flex-start;
     }
 
     .carousel-vector {
@@ -1227,30 +1247,11 @@ body {
         justify-content: center;
     }
 
-}
-
-@media screen and (min-width:1440px) {
-    .menu-toggle {
-        display: none;
-    }
-
     .menu-desktop, .menu-language {
         display: flex;
     }
 
-    .header {
-        justify-content:space-evenly;
+    .menu-toggle {
+        display: none;
     }
-
-    .logo {
-        margin-left: 40px;
-    }
-
-    .destaques-title {
-    margin-left: 270px;
-    }
-        
-    .news-title {
-    margin-left: 270px;
-}
 }
