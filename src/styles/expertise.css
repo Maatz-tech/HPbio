@@ -167,6 +167,14 @@
         margin-right: 64px;
     }
 
+    .hero-expertise-title h3 {
+        font-size: 40px;
+    }
+
+    .hero-expertise-title .bold {
+        font-size: 56px;
+    }
+
     .expertise-third-section {
     padding: 100px 120px;
 }
