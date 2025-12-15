@@ -5,14 +5,22 @@
 /* Footer Decoration (wave) */
 .footer-decoration {
     width: 100%;
-    background: #ececec;
     line-height: 0;
+    /* Pull up to overlap certifications spacer - Mobile SVG ratio: 45/368 = 12.228% */
+    margin-top: -12.228%;
 }
 
 .footer-decoration img {
     width: 100%;
     height: auto;
     display: block;
+    /* Fix subpixel gap on mobile only */
+    margin-bottom: -2px;
+}
+
+/* Mobile: show mobile SVG, hide desktop SVG */
+.footer-decoration img.footer-decoration-desktop {
+    display: none;
 }
 
 /* Main Footer */
@@ -209,6 +217,24 @@
 
 /* Tablet (768px+) */
 @media screen and (min-width: 768px) {
+    /* Desktop SVG ratio: 69/1440 = 4.792% */
+    .footer-decoration {
+        margin-top: -4.792%;
+    }
+
+    .footer-decoration img {
+        margin-bottom: 0;
+    }
+
+    /* Switch to desktop SVG */
+    .footer-decoration img.footer-decoration-mobile {
+        display: none;
+    }
+
+    .footer-decoration img.footer-decoration-desktop {
+        display: block;
+    }
+
     .footer {
         padding: 60px 40px;
     }

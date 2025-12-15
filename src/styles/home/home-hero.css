@@ -129,14 +129,34 @@
 
 .carousel-decoration-top {
     top: 0;
+    display: none;
 }
 
 .carousel-decoration-bottom {
     bottom: 0;
 }
 
+/* Mobile: show mobile SVG, hide desktop SVG */
+.carousel-decoration-bottom-desktop {
+    display: none;
+}
+
 /* Tablet (768px+) */
 @media screen and (min-width: 768px) {
+    /* Show top decoration on tablet+ */
+    .carousel-decoration-top {
+        display: block;
+    }
+
+    /* Switch to desktop SVG */
+    .carousel-decoration-bottom-mobile {
+        display: none;
+    }
+
+    .carousel-decoration-bottom-desktop {
+        display: block;
+    }
+
     .hero-carousel {
         margin: 24px auto 0;
     }
