@@ -1,0 +1,154 @@
+/* ================================
+   Destaques Section
+   ================================ */
+.destaques-section {
+    padding: 40px 0 60px;
+}
+
+.destaques-section .section-header {
+    margin-bottom: 32px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    padding: 32px 24px;
+    background: linear-gradient(174deg, #f6f6f6 8%, #f2f2f2 92%);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-card-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.product-card-title {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    border-left: 6px solid #8cc540;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    line-height: 1;
+}
+
+.product-card-title .light {
+    font-family: "Avenir Next Cyr";
+    font-weight: 200;
+}
+
+.product-card-title .bold {
+    font-family: "Avenir Next Cyr";
+    font-weight: 900;
+}
+
+.product-card-subtitle {
+    font-family: "Avenir Next Cyr";
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+    max-width: 180px;
+}
+
+.product-card-decoration {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.product-card-image {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    bottom: 24px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.product-card-image img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.destaques-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Tablet (768px+) */
+@media screen and (min-width: 768px) {
+    .destaques-section {
+        padding: 60px 0 80px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .product-card {
+        min-height: 320px;
+        padding: 40px;
+    }
+
+    .product-card-title {
+        font-size: 36px;
+        padding-left: 20px;
+    }
+
+    .product-card-subtitle {
+        font-size: 15px;
+    }
+}
+
+/* Desktop (1440px+) */
+@media screen and (min-width: 1440px) {
+    .destaques-section {
+        padding: 40px 0 80px;
+    }
+
+    .destaques-section .section-header {
+        margin-bottom: 40px;
+    }
+
+    .product-grid {
+        gap: 40px;
+    }
+
+    .product-card {
+        min-height: 371px;
+        padding: 55px;
+    }
+
+    .product-card-title {
+        font-size: 40px;
+        padding-left: 24px;
+    }
+
+    .product-card-subtitle {
+        font-size: 16px;
+    }
+}

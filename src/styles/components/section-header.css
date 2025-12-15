@@ -1,0 +1,55 @@
+/* ================================
+   Section Header Component
+   ================================ */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.section-header-title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.section-header-title::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 48px;
+    background-color: #8cc540;
+    flex-shrink: 0;
+}
+
+.section-header-title h2 {
+    font-family: "Avenir Next Cyr";
+    font-size: 32px;
+    font-weight: 900;
+    color: #4d4d4d;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Tablet (768px+) */
+@media screen and (min-width: 768px) {
+    .section-header-title::before {
+        height: 56px;
+    }
+
+    .section-header-title h2 {
+        font-size: 40px;
+    }
+}
+
+/* Desktop (1440px+) */
+@media screen and (min-width: 1440px) {
+    .section-header-title::before {
+        height: 72px;
+    }
+
+    .section-header-title h2 {
+        font-size: 48px;
+    }
+}

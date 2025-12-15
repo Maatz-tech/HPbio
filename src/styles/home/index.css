@@ -1,0 +1,17 @@
+/* ================================
+   Home Page Styles
+   Import all home page sections
+   ================================ */
+
+/* Components */
+@import "../components/button.css";
+@import "../components/section-header.css";
+
+/* Home Sections */
+@import "./home-header.css";
+@import "./home-hero.css";
+@import "./home-destaques.css";
+@import "./home-forty-years.css";
+@import "./home-news.css";
+@import "./home-certifications.css";
+@import "./home-footer.css";

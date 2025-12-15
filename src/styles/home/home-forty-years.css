@@ -1,0 +1,119 @@
+/* ================================
+   40 Years Section
+   ================================ */
+.forty-years-section {
+    position: relative;
+    background: linear-gradient(90deg, #333333 0%, #4d4d4d 48%, #58595b 95%);
+    overflow: hidden;
+}
+
+.forty-years-decoration {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.forty-years-decoration-top {
+    top: 0;
+}
+
+.forty-years-decoration-bottom {
+    bottom: 0;
+}
+
+.forty-years-decoration-mobile {
+    display: block;
+}
+
+.forty-years-decoration-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .forty-years-decoration-mobile {
+        display: none;
+    }
+
+    .forty-years-decoration-desktop {
+        display: block;
+    }
+}
+
+.forty-years-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 24px;
+    margin: 0 auto;
+}
+
+.forty-years-text {
+    flex-shrink: 0;
+}
+
+.forty-years-text img {
+    width: 200px;
+    height: auto;
+}
+
+.forty-years-images img {
+    width: 100%;
+    height: auto;
+}
+
+/* Tablet (768px+) */
+@media screen and (min-width: 768px) {
+    .forty-years-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px 40px;
+        gap: 64px;
+    }
+
+    .forty-years-text img {
+        width: 250px;
+    }
+
+    .forty-years-images img {
+        width: 250px;
+    }
+}
+
+/* Desktop (1440px+) */
+@media screen and (min-width: 1440px) {
+    .forty-years-content {
+        min-height: 600px;
+        padding: 180px 40px 80px;
+    }
+
+    .forty-years-text img {
+        width: 450px;
+    }
+
+    .forty-years-images img {
+        width: 623px;
+    }
+}
+
+/* Large Desktop (1920px+) */
+@media screen and (min-width: 1920px) {
+    .forty-years-content {
+        min-height: 600px;
+        padding: 180px 40px 80px;
+    }
+
+    .forty-years-text img {
+        width: 534px;
+    }
+
+    .forty-years-images img {
+        width: 733px;
+    }
+}

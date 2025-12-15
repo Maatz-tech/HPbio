@@ -1,0 +1,293 @@
+/* Fontes customizadas */
+/* Avenir Next Cyr - Todas as variações */
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Regular.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Italic.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Thin.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-ThinItalic.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Light.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-LightItalic.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Medium.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-MediumItalic.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Demi.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Demi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-DemiItalic.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-DemiItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Bold.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-BoldItalic.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Heavy.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-HeavyItalic.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-UltraLight.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-UltraLightIt.woff2') format('woff2'),
+         url('../assets/fonts/avenir-font-hpbio/font/AvenirNextCyr-UltraLightIt.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-RegularIt.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-LightIt.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-Semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-SemiboldIt.otf") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-BoldIt.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-Extrabld.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-ExtrabldIt.otf") format("opentype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-BlackIt.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNovaT-Thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../assets/fonts/Proxima Nova/ProximaNova-ThinIt.otf") format("opentype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Avenir Next Cyr";
+    padding-top: 80px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1680px; /* 1440px content + 120px padding cada lado */
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        padding: 0 120px;
+    }
+}
+
+/* Container modifiers - remove padding por breakpoint */
+.container.no-padding-sm { padding: 0; }
+
+@media screen and (min-width: 768px) {
+    .container.no-padding-sm { padding: 0 40px; }
+    .container.no-padding-md { padding: 0; }
+}
+
+@media screen and (min-width: 1440px) {
+    .container.no-padding-sm { padding: 0 120px; }
+    .container.no-padding-md { padding: 0 120px; }
+    .container.no-padding-lg { padding: 0; }
+}
+
+/* Estilos globais para links e botões */
+a,
+button {
+    transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover,
+button:hover {
+    filter: brightness(0.8);
+}
+
+a:active,
+button:active {
+    filter: brightness(0.6);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #8cc540;
+    outline-offset: 2px;
+}

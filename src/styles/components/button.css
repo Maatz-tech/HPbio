@@ -1,0 +1,24 @@
+/* ================================
+   Button Primary
+   ================================ */
+.button-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+    background-color: #8cc540;
+    border: none;
+    border-radius: 100px;
+    font-family: "Avenir Next Cyr";
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.button-primary.button-small {
+    padding: 10px 24px;
+    font-size: 16px;
+}

@@ -1,85 +1,120 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const sideMenu = document.querySelector('.side-menu');
+const backdrop = document.querySelector('.backdrop');
+const menuClose = document.querySelector('.side-menu-close');
 
-menuToggle.addEventListener('click', () => {
-    sideMenu.classList.toggle('active');
-    menuToggle.classList.toggle('active');
-})
+if (menuToggle && sideMenu && backdrop) {
+    menuToggle.addEventListener('click', () => {
+        sideMenu.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        backdrop.classList.toggle('active');
+    });
 
-//fechar ao clicar nos links
-const menuLinks = document.querySelectorAll('.menu-list a');
-menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
+    //fechar ao clicar no botão close
+    if (menuClose) {
+        menuClose.addEventListener('click', () => {
+            sideMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+            backdrop.classList.remove('active');
+        });
+    }
+
+    //fechar ao clicar nos links
+    const menuLinks = document.querySelectorAll('.menu-list a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            sideMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+            backdrop.classList.remove('active');
+        });
+    });
+
+    //fechar ao clicar no backdrop
+    backdrop.addEventListener('click', () => {
         sideMenu.classList.remove('active');
         menuToggle.classList.remove('active');
+        backdrop.classList.remove('active');
+    });
+}
+
+// Dropdown menus expansíveis
+const expansionToggles = document.querySelectorAll('.expansion-toggle');
+
+expansionToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.closest('.side-menu-expansion-content').classList.toggle('active');
     });
 });
 
-//funcionalidade tab
-const tabs = document.querySelectorAll('.tab');
+// Hero Carousel
+const carouselSlides = document.querySelectorAll('.carousel-slide');
+const prevBtn = document.querySelector('.carousel-prev');
+const nextBtn = document.querySelector('.carousel-next');
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () => {
-        //remove active de todas
-        tabs.forEach(t => t.classList.remove('active'));
-        //Adiciona active na clicada
-        tab.classList.add('active');
-    });
-});
+if (carouselSlides.length > 0) {
+    let currentSlide = 0;
+    let autoPlayInterval;
 
-// Carrossel de imagens
-const carouselImages = document.querySelectorAll('.carousel-image');
-const prevBtn = document.querySelector('.carousel-btn.prev');
-const nextBtn = document.querySelector('.carousel-btn.next');
-
-if (carouselImages.length > 0 && prevBtn && nextBtn) {
-    let currentIndex = 0;
-
-
-function showImage(index) {
-    carouselImages.forEach(img => img.classList.remove('active'));
-    carouselImages[index].classList.add('active');
-}
-
-prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
-    showImage(currentIndex);
-});
-
-nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % carouselImages.length;
-    showImage(currentIndex);
-});
-}
-
-// Dropdown menu Neurocirurgia
-const neurocirurgiaItem = document.querySelector('.side-menu-neurocirurgia-content');
-
-neurocirurgiaItem.addEventListener('click', function(e) {
-    // Só ativa/desativa se clicar no item principal, não nos links do submenu
-    if (e.target.tagName !== 'A' || e.target.getAttribute('href') === '#neurocirurgia') {
-        e.preventDefault();
-        this.classList.toggle('active');
-    }
-});
-
-
-// Funcionalidade das abas expertise
-document.querySelectorAll('.tab').forEach(tab => {
-    tab.addEventListener('click', function() {
-        // Remove 'active' de todas as abas
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        
-        // Adiciona 'active' na aba clicada
-        this.classList.add('active');
-        
-        // Oculta todo o conteúdo
-        document.querySelectorAll('.tab-content').forEach(content => {
-            content.classList.remove('active');
+    function showSlide(index) {
+        // Remove active class from all slides
+        carouselSlides.forEach(slide => {
+            slide.classList.remove('active');
         });
-        
-        // Mostra o conteúdo correspondente
-        const tabId = this.getAttribute('data-tab');
-        document.getElementById(tabId).classList.add('active');
-    });
-});
+
+        // Handle wraparound
+        if (index >= carouselSlides.length) {
+            currentSlide = 0;
+        } else if (index < 0) {
+            currentSlide = carouselSlides.length - 1;
+        } else {
+            currentSlide = index;
+        }
+
+        // Add active class to current slide
+        carouselSlides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
+
+    // Auto-play functionality
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+    }
+
+    // Event listeners for navigation buttons
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            stopAutoPlay();
+            nextSlide();
+            startAutoPlay();
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            stopAutoPlay();
+            prevSlide();
+            startAutoPlay();
+        });
+    }
+
+    // Start auto-play
+    startAutoPlay();
+
+    // Pause auto-play on hover
+    const carouselContainer = document.querySelector('.carousel-container');
+    if (carouselContainer) {
+        carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+        carouselContainer.addEventListener('mouseleave', startAutoPlay);
+    }
+}

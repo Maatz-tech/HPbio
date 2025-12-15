@@ -1,0 +1,398 @@
+/* ================================
+   Header and Menu
+   ================================ */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, #4d4d4d 0%, #333 100%);
+    z-index: 99;
+    padding: 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-desktop {
+    display: none;
+    margin: 0 auto;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-desktop a {
+    padding: 10px;
+    color: var(--white-2, #FCFCFC);
+    font-family: "Avenir Next";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.menu-desktop a.active {
+    font-family: "Avenir Next Cyr";
+    color: var(--white-2, #FCFCFC);
+    font-family: "Avenir Next";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.menu-desktop li {
+    display: inline-block;
+}
+
+/* Dropdown Desktop */
+.menu-desktop-dropdown {
+    position: relative;
+}
+
+.menu-desktop-dropdown > a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dropdown-arrow-desktop {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(67%) sepia(65%) saturate(392%) hue-rotate(43deg) brightness(96%) contrast(91%);
+}
+
+.menu-desktop-dropdown:hover .dropdown-arrow-desktop {
+    transform: rotate(180deg);
+}
+
+.dropdown-desktop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 280px;
+    background: var(--white, #FCFCFC);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 16px 0;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.menu-desktop-dropdown:hover .dropdown-desktop {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-desktop li {
+    display: block;
+}
+
+.dropdown-desktop a {
+    display: block;
+    padding: 10px 24px;
+    color: #333 !important;
+    font-family: "Avenir Next";
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-desktop a:hover {
+    background-color: rgba(140, 197, 64, 0.1);
+    filter: none;
+}
+
+/* Language selector */
+.menu-language {
+    display: none;
+    align-items: center;
+    gap: 12px;
+    font-family: "Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+}
+
+.menu-language a {
+    color: var(--white, #FCFCFC);
+    text-decoration: none;
+    transition: border-color 0.3s ease;
+    line-height: 1;
+}
+
+.menu-language li {
+    display: flex;
+    align-items: center;
+}
+
+.menu-language li.active {
+    font-weight: 900;
+}
+
+.menu-language .separator {
+    background-color: #8cc540;
+    text-decoration: none;
+    line-height: 1;
+    width: 3px;
+    height: 16px;
+}
+
+/* Menu lateral (mobile) */
+.menu-toggle {
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.menu-toggle span {
+    width: 3px;
+    height: 100%;
+    background: var(--white, #FCFCFC);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.menu-list span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ededed;
+    opacity: 0.2;
+    border-radius: 1px;
+    margin: 16px 0;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -360px;
+    width: 360px;
+    max-width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #4d4d4d 0%, #333);
+    transition: right 0.3s ease;
+    z-index: 9999;
+    padding: 16px 24px;
+}
+
+.side-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.side-menu-header .logo img {
+    height: 40px;
+}
+
+.side-menu-close {
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.side-menu-close img {
+    width: 100%;
+    height: 100%;
+}
+
+.side-menu-expansion-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.expansion-toggle {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white, #FCFCFC);
+    font-family: "Avenir Next";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.side-menu.active {
+    right: 0;
+}
+
+/* Language selector no menu mobile */
+.side-menu-language {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu-language li {
+    display: flex;
+    align-items: center;
+}
+
+.side-menu-language a {
+    color: var(--white, #FCFCFC);
+    text-decoration: none;
+    font-family: "Avenir Next";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.side-menu-language .separator {
+    background-color: #8cc540;
+    width: 3px;
+    height: 16px;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 998;
+    cursor: pointer;
+}
+
+.backdrop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dropdown menu mobile */
+.dropdown-menu {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.dropdown-menu li {
+    padding: 0px 16px;
+    border: none;
+}
+
+.dropdown-menu a {
+    color: var(--white, #FCFCFC);
+    font-family: "Avenir Next";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.side-menu-expansion-content.active .dropdown-menu {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 16px;
+}
+
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(67%) sepia(65%) saturate(392%) hue-rotate(43deg) brightness(96%) contrast(91%);
+}
+
+.side-menu-expansion-content.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list > li {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-list > li:last-child {
+    border-bottom: none;
+}
+
+.menu-list > li > a {
+    color: var(--white, #FCFCFC);
+    text-decoration: none;
+    font-family: "Avenir Next";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Animação do hambúrguer para X */
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media screen and (min-width: 1440px) {
+    .menu-desktop, .menu-language {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
