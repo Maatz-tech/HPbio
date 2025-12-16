@@ -1,0 +1,12 @@
+/* ================================
+   Expertise Page Styles
+   ================================ */
+
+/* Shared Components */
+@import "../shared/tabs.css";
+@import "../shared/certifications.css";
+
+/* Expertise Page Sections */
+@import "./expertise-hero.css";
+@import "./expertise-history.css";
+@import "./expertise-tabs.css";

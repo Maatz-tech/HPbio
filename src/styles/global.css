@@ -1,4 +1,16 @@
-/* Fontes customizadas */
+/* ================================
+   Global Components (must be first)
+   ================================ */
+@import "./components/button.css";
+@import "./components/section-header.css";
+
+/* Shared Layout Components (Header & Footer) */
+@import "./home/home-header.css";
+@import "./home/home-footer.css";
+
+/* ================================
+   Fonts
+   ================================ */
 /* Avenir Next Cyr - Todas as variações */
 @font-face {
     font-family: 'Avenir Next Cyr';

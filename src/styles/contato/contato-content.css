@@ -1,0 +1,580 @@
+/* ================================
+   Contato Content Section
+   Mobile First Approach
+   ================================ */
+
+/* Content Section */
+.contato-content {
+    padding: 64px 0;
+    background-color: #ffffff;
+}
+
+.contato-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* Left Column - Info */
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Header with accent bar */
+.contato-info-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contato-info-accent {
+    width: 10px;
+    height: 72px;
+    background-color: #8cc540;
+}
+
+.contato-info-title {
+    display: flex;
+    flex-direction: column;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.contato-info-title .light {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.contato-info-title .bold {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* Description */
+.contato-description {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #4d4d4d;
+}
+
+/* Location Cards */
+.contato-locations {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contato-location-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contato-location-country {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4d4d4d;
+    text-transform: uppercase;
+}
+
+.contato-location-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contato-location-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    text-decoration: none;
+    color: #4d4d4d;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.contato-location-item:hover {
+    color: #8cc540;
+}
+
+.contato-location-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    background-color: #8cc540;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-location-icon img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+.contato-location-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 6px;
+}
+
+/* Operating Hours */
+.contato-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contato-hours-title {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4d4d4d;
+    text-transform: uppercase;
+}
+
+.contato-hours-text {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #4d4d4d;
+}
+
+/* Right Column - Form */
+.contato-form-wrapper {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 32px 24px;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contato-form-title {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #4d4d4d;
+    text-transform: uppercase;
+}
+
+/* Form Fields */
+.contato-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contato-form-label {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4d4d4d;
+}
+
+.contato-form-input,
+.contato-form-textarea {
+    width: 100%;
+    padding: 14px 16px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    color: #4d4d4d;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.contato-form-input:focus,
+.contato-form-textarea:focus {
+    border-color: #8cc540;
+}
+
+.contato-form-input::placeholder,
+.contato-form-textarea::placeholder {
+    color: #999999;
+}
+
+.contato-form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Checkbox */
+.contato-form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.contato-form-checkbox input {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    margin-top: 2px;
+    accent-color: #8cc540;
+    cursor: pointer;
+}
+
+.contato-form-checkbox-text {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4d4d4d;
+}
+
+.contato-form-checkbox-text a {
+    color: #8cc540;
+    text-decoration: underline;
+}
+
+.contato-form-checkbox-text a:hover {
+    text-decoration: none;
+}
+
+/* Submit Button */
+.contato-form-submit {
+    width: 100%;
+    padding: 16px 32px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #8cc540;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+.contato-form-submit:hover {
+    background-color: #7ab536;
+}
+
+.contato-form-submit:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* ================================
+   Form Validation States
+   ================================ */
+
+/* Error State */
+.contato-form-input.error,
+.contato-form-textarea.error {
+    border-color: #e53935;
+    background-color: #fff5f5;
+}
+
+.contato-form-input.error:focus,
+.contato-form-textarea.error:focus {
+    border-color: #e53935;
+    box-shadow: 0 0 0 2px rgba(229, 57, 53, 0.1);
+}
+
+/* Error Message */
+.contato-form-error {
+    display: none;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 12px;
+    color: #e53935;
+    margin-top: 4px;
+}
+
+.contato-form-group.has-error .contato-form-error {
+    display: block;
+}
+
+/* Checkbox Error State */
+.contato-form-checkbox.error .contato-form-checkbox-text {
+    color: #e53935;
+}
+
+.contato-form-checkbox-error {
+    display: none;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 12px;
+    color: #e53935;
+    margin-top: 4px;
+    margin-left: 32px;
+}
+
+.contato-form-checkbox-wrapper.has-error .contato-form-checkbox-error {
+    display: block;
+}
+
+/* Submit Button States */
+.contato-form-submit.loading {
+    position: relative;
+    color: transparent;
+}
+
+.contato-form-submit.loading::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Form Messages */
+.contato-form-message {
+    display: none;
+    padding: 16px;
+    border-radius: 4px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contato-form-message.show {
+    display: block;
+}
+
+.contato-form-message.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.contato-form-message.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+/* ================================
+   Tablet/Desktop (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .contato-content {
+        padding: 80px 0;
+    }
+
+    .contato-content-wrapper {
+        flex-direction: row;
+        gap: 64px;
+        align-items: flex-start;
+    }
+
+    .contato-info {
+        flex: 1;
+        gap: 40px;
+    }
+
+    .contato-form-wrapper {
+        flex: 1;
+        padding: 40px;
+    }
+
+    /* Header spacing */
+    .contato-info-header {
+        gap: 24px;
+    }
+
+    .contato-info-accent {
+        width: 12px;
+        height: auto;
+        align-self: stretch;
+    }
+
+    .contato-info-title .light {
+        font-size: 32px;
+    }
+
+    .contato-info-title .bold {
+        font-size: 48px;
+    }
+
+    /* Locations side by side */
+    .contato-locations {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .contato-location-card {
+        flex: 1;
+    }
+
+    .contato-form-title {
+        font-size: 28px;
+    }
+
+    .contato-form-submit {
+        width: auto;
+        align-self: flex-start;
+    }
+}
+
+/* ================================
+   Desktop (1440px+)
+   ================================ */
+@media screen and (min-width: 1440px) {
+    .contato-content {
+        padding: 100px 0;
+    }
+
+    .contato-content-wrapper {
+        gap: 80px;
+    }
+
+    .contato-info-title .light {
+        font-size: 40px;
+    }
+
+    .contato-info-title .bold {
+        font-size: 56px;
+    }
+}
+
+/* ================================
+   Toaster Notifications
+   ================================ */
+.toaster-container {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    pointer-events: none;
+}
+
+.toaster {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    min-width: 300px;
+    pointer-events: auto;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+}
+
+.toaster--visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.toaster--hiding {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.toaster--success {
+    border-left: 4px solid #8cc540;
+}
+
+.toaster--success .toaster__icon {
+    color: #8cc540;
+}
+
+.toaster--error {
+    border-left: 4px solid #e53935;
+}
+
+.toaster--error .toaster__icon {
+    color: #e53935;
+}
+
+.toaster__icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.toaster__icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.toaster__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.toaster__message {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4d4d4d;
+    margin: 0;
+}
+
+.toaster__close {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999999;
+    transition: color 0.2s ease;
+}
+
+.toaster__close:hover {
+    color: #4d4d4d;
+}
+
+.toaster__close svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 480px) {
+    .toaster-container {
+        top: 16px;
+        right: 16px;
+        left: 16px;
+    }
+
+    .toaster {
+        min-width: auto;
+        max-width: none;
+    }
+}

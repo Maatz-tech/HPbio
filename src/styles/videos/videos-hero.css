@@ -1,0 +1,112 @@
+/* ================================
+   Videos Hero Section
+   Mobile First Approach
+   ================================ */
+
+/* Hero Section */
+.videos-hero {
+    position: relative;
+    background: linear-gradient(to left, #cccccc, #ffffff);
+    padding: 64px 0 40px;
+    overflow: hidden;
+}
+
+/* Decoration SVG at top */
+.videos-hero-decoration-top {
+    position: absolute;
+    top: 0px;
+    min-width: 812px;
+    width: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    line-height: 0;
+}
+
+.videos-hero-decoration-top img {
+    width: 100%;
+    height: auto;
+}
+
+/* Decoration SVG at bottom - Hidden on mobile */
+.videos-hero-decoration-bottom {
+    display: none;
+}
+
+/* Content */
+.videos-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header with accent bar and title */
+.videos-hero-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.videos-hero-accent {
+    width: 10px;
+    height: 48px;
+    background-color: #8cc540;
+}
+
+.videos-hero-title {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+}
+
+/* ================================
+   Tablet/Desktop (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .videos-hero {
+        padding: 100px 0;
+    }
+
+    /* Top decoration - full width */
+    .videos-hero-decoration-top {
+        width: 100%;
+    }
+
+    /* Bottom decoration - show on tablet+ */
+    .videos-hero-decoration-bottom {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        line-height: 0;
+    }
+
+    .videos-hero-decoration-bottom img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Header spacing */
+    .videos-hero-header {
+        gap: 24px;
+    }
+
+    .videos-hero-accent {
+        height: 56px;
+    }
+
+    .videos-hero-title {
+        font-size: 56px;
+    }
+}
+
+/* ================================
+   Desktop (1440px+)
+   ================================ */
+@media screen and (min-width: 1440px) {
+    .videos-hero {
+        padding: 100px 0;
+    }
+}

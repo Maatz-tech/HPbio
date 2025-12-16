@@ -1,0 +1,128 @@
+/* ================================
+   Carreira Hero Section
+   Mobile First Approach
+   ================================ */
+
+/* Hero Section */
+.carreira-hero {
+    position: relative;
+    background: linear-gradient(to left, #cccccc, #ffffff);
+    padding: 64px 0 40px;
+    overflow: hidden;
+}
+
+/* Decoration SVG at top */
+.carreira-hero-decoration-top {
+    position: absolute;
+    top: 0px;
+    min-width: 812px;
+    width: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    line-height: 0;
+}
+
+.carreira-hero-decoration-top img {
+    width: 100%;
+    height: auto;
+}
+
+/* Decoration SVG at bottom - Hidden on mobile */
+.carreira-hero-decoration-bottom {
+    display: none;
+}
+
+/* Content */
+.carreira-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header with accent bar and title */
+.carreira-hero-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.carreira-hero-accent {
+    width: 10px;
+    height: 72px;
+    background-color: #8cc540;
+}
+
+.carreira-hero-title {
+    display: flex;
+    flex-direction: column;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.carreira-hero-title .light {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.carreira-hero-title .bold {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* ================================
+   Tablet/Desktop (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .carreira-hero {
+        padding: 100px 0;
+    }
+
+    /* Top decoration - full width */
+    .carreira-hero-decoration-top {
+        width: 100%;
+    }
+
+    /* Bottom decoration - show on tablet+ */
+    .carreira-hero-decoration-bottom {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        line-height: 0;
+    }
+
+    .carreira-hero-decoration-bottom img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Header spacing */
+    .carreira-hero-header {
+        gap: 24px;
+    }
+
+    .carreira-hero-accent {
+        width: 12px;
+        height: auto;
+        align-self: stretch;
+    }
+
+    .carreira-hero-title .light {
+        font-size: 40px;
+    }
+
+    .carreira-hero-title .bold {
+        font-size: 56px;
+    }
+}
+
+/* ================================
+   Desktop (1440px+)
+   ================================ */
+@media screen and (min-width: 1440px) {
+    .carreira-hero {
+        padding: 100px 0;
+    }
+}

@@ -1,0 +1,102 @@
+/* ================================
+   Shared Certifications Component
+   Mobile: Horizontal scroll-snap carousel
+   Desktop: Grid layout
+   ================================ */
+
+/* Certifications Grid - Mobile: Horizontal scroll-snap carousel */
+.certifications-grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    /* Negative margin to extend beyond container, padding to maintain scroll position */
+    margin: 0 -24px;
+    padding: 0 24px 16px 24px;
+    scroll-padding-left: 24px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.certifications-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* Certification Card */
+.certification-card {
+    flex: 0 0 200px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+
+.certification-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.certification-logo-round {
+    border-radius: 50%;
+}
+
+.certification-text {
+    text-align: center;
+}
+
+.certification-name {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+}
+
+.certification-desc {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* ================================
+   Tablet (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .certifications-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        overflow-x: visible;
+        scroll-snap-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .certification-card {
+        flex: none;
+        min-width: unset;
+        scroll-snap-align: none;
+    }
+}
+
+/* ================================
+   Desktop (1440px+)
+   ================================ */
+@media screen and (min-width: 1440px) {
+    .certifications-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

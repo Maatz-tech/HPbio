@@ -1,0 +1,22 @@
+/* ================================
+   Contato Page Styles
+   ================================ */
+
+/* Contato Page Sections */
+@import "./contato-hero.css";
+@import "./contato-content.css";
+@import "./contato-world.css";
+
+/* Footer overlap with gray background for contato page */
+.footer-decoration--contato {
+    background-color: #f4f4f4;
+    /* Mobile SVG ratio: 45/368 = 12.228% */
+    margin-top: -12.228%;
+}
+
+@media screen and (min-width: 768px) {
+    /* Desktop SVG ratio: 69/1440 = 4.792% */
+    .footer-decoration--contato {
+        margin-top: -4.792%;
+    }
+}

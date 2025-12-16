@@ -1,0 +1,133 @@
+/* ================================
+   Expertise History Section
+   Mobile First Approach
+   ================================ */
+
+/* History Section */
+.expertise-history {
+    background-color: #ffffff;
+    padding: 64px 0 40px;
+}
+
+/* Content wrapper */
+.expertise-history-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Image */
+.expertise-history-image {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.expertise-history-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Text Content */
+.expertise-history-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Section Header with accent bar */
+.expertise-section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.expertise-section-accent {
+    width: 8px;
+    height: 100%;
+    min-height: 32px;
+    background-color: #8cc540;
+    align-self: stretch;
+}
+
+.expertise-section-title {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Text paragraphs */
+.expertise-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.expertise-text-content p {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Divider line */
+.expertise-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ededed;
+    border: none;
+    margin: 0;
+}
+
+/* ================================
+   Tablet/Desktop (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .expertise-history {
+        padding: 100px 0 50px;
+    }
+
+    /* Second section padding adjustment */
+    .expertise-history--reverse {
+        padding: 50px 0 100px;
+    }
+
+    /* Side by side layout */
+    .expertise-history-content {
+        flex-direction: row;
+        gap: 64px;
+        align-items: flex-start;
+    }
+
+    /* Reverse layout - text first, image second */
+    .expertise-history--reverse .expertise-history-content {
+        flex-direction: row-reverse;
+    }
+
+    /* Image - fixed width */
+    .expertise-history-image {
+        width: 439px;
+        flex-shrink: 0;
+    }
+
+    .expertise-history-image img {
+        height: 574px;
+        object-fit: cover;
+    }
+
+    /* Text takes remaining space */
+    .expertise-history-text {
+        flex: 1;
+    }
+
+    .expertise-section-title {
+        font-size: 32px;
+    }
+}

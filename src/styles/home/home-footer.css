@@ -6,6 +6,10 @@
 .footer-decoration {
     width: 100%;
     line-height: 0;
+}
+
+/* Overlap modifier - only for pages with certifications spacer (home) */
+.footer-decoration--overlap {
     /* Pull up to overlap certifications spacer - Mobile SVG ratio: 45/368 = 12.228% */
     margin-top: -12.228%;
 }
@@ -218,7 +222,7 @@
 /* Tablet (768px+) */
 @media screen and (min-width: 768px) {
     /* Desktop SVG ratio: 69/1440 = 4.792% */
-    .footer-decoration {
+    .footer-decoration--overlap {
         margin-top: -4.792%;
     }
 

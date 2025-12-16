@@ -1,0 +1,67 @@
+/* ================================
+   Shared Tabs Component
+   Reusable tabs for product and expertise pages
+   ================================ */
+
+/* Tabs Container - Mobile with scroll snap */
+.tabs {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-bottom: 40px;
+}
+
+.tabs::-webkit-scrollbar {
+    display: none;
+}
+
+/* Tab Button */
+.tab {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    padding: 10px 24px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-family: "Avenir Next", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4d4d4d;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.tab.active {
+    color: #8cc540;
+    font-weight: 700;
+    border-bottom-color: #8cc540;
+}
+
+/* Uppercase variant */
+.tab--uppercase {
+    text-transform: uppercase;
+}
+
+/* Tab Content Panel */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* ================================
+   Tablet/Desktop (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    /* Tabs no longer scroll */
+    .tabs {
+        overflow-x: visible;
+        scroll-snap-type: none;
+    }
+}

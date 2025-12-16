@@ -1,0 +1,202 @@
+/* ================================
+   Contato World Section
+   HPBio no Mundo
+   Mobile First Approach
+   ================================ */
+
+/* World Section */
+.contato-world {
+    padding: 40px 0 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.contato-world-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.contato-world-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contato-world-accent {
+    width: 10px;
+    height: 56px;
+    background-color: #8cc540;
+}
+
+.contato-world-title {
+    display: flex;
+    flex-direction: column;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.contato-world-title .light {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.contato-world-title .bold {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.contato-world-subtitle {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #4d4d4d;
+    text-transform: uppercase;
+}
+
+/* Distributors Grid */
+.contato-world-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Distributor Card */
+.distributor-card {
+    background-color: #fcfcfc;
+    border: 1px solid #ededed;
+    border-radius: 6px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.distributor-country {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4d4d4d;
+    text-transform: uppercase;
+}
+
+.distributor-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ededed;
+}
+
+.distributor-company {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4d4d4d;
+    text-transform: uppercase;
+}
+
+/* Contact Items */
+.distributor-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.distributor-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    text-decoration: none;
+    color: #6e6f71;
+    font-family: "Avenir Next", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.distributor-contact-item:hover {
+    color: #8cc540;
+}
+
+.distributor-contact-icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    background-color: #8cc540;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.distributor-contact-icon img {
+    width: 14px;
+    height: 14px;
+    filter: brightness(0) invert(1);
+}
+
+.distributor-contact-text {
+    padding-top: 2px;
+}
+
+/* ================================
+   Tablet/Desktop (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .contato-world {
+        padding: 80px 0 0;
+    }
+
+    .contato-world-header {
+        margin-bottom: 40px;
+    }
+
+    .contato-world-title .light,
+    .contato-world-title .bold {
+        font-size: 32px;
+    }
+
+    .contato-world-subtitle {
+        font-size: 18px;
+    }
+
+    /* 2 columns on tablet */
+    .contato-world-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+/* ================================
+   Desktop (1200px+)
+   ================================ */
+@media screen and (min-width: 1200px) {
+    .contato-world {
+        padding: 100px 0 0;
+    }
+
+    /* 3 columns on desktop */
+    .contato-world-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Footer Spacer - creates space for footer wave overlap */
+.contato-world-footer-spacer {
+    width: 100%;
+    /* Mobile SVG ratio: 45/368 = 12.228% */
+    padding-bottom: 12.228%;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .contato-world-footer-spacer {
+        /* Desktop SVG ratio: 69/1440 = 4.792% */
+        padding-bottom: 4.792%;
+        margin-top: 60px;
+    }
+}

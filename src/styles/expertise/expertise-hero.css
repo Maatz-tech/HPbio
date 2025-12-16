@@ -1,0 +1,127 @@
+/* ================================
+   Expertise Hero Section
+   Mobile First Approach
+   ================================ */
+
+/* Hero Section */
+.expertise-hero {
+    position: relative;
+    background: linear-gradient(to left, #cccccc, #ffffff);
+    padding: 64px 0 40px;
+    overflow: hidden;
+}
+
+/* Decoration SVG at top */
+.expertise-hero-decoration-top {
+    position: absolute;
+    top: 0px;
+    min-width: 812px;
+    width: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    line-height: 0;
+}
+
+.expertise-hero-decoration-top img {
+    width: 100%;
+    height: auto;
+}
+
+/* Decoration SVG at bottom - Hidden on mobile */
+.expertise-hero-decoration-bottom {
+    display: none;
+}
+
+/* Content */
+.expertise-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header with accent bar and title */
+.expertise-hero-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.expertise-hero-accent {
+    width: 10px;
+    height: 72px;
+    background-color: #8cc540;
+}
+
+.expertise-hero-title {
+    display: flex;
+    flex-direction: column;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.expertise-hero-title .light {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.expertise-hero-title .bold {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* ================================
+   Tablet/Desktop (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .expertise-hero {
+        padding: 100px 0;
+    }
+
+    /* Top decoration - full width */
+    .expertise-hero-decoration-top {
+        width: 100%;
+    }
+
+    /* Bottom decoration - show on tablet+ */
+    .expertise-hero-decoration-bottom {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        line-height: 0;
+    }
+
+    .expertise-hero-decoration-bottom img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Header spacing */
+    .expertise-hero-header {
+        gap: 24px;
+    }
+
+    .expertise-hero-accent {
+        height: auto;
+        align-self: stretch;
+    }
+
+    .expertise-hero-title .light {
+        font-size: 40px;
+    }
+
+    .expertise-hero-title .bold {
+        font-size: 56px;
+    }
+}
+
+/* ================================
+   Desktop (1440px+)
+   ================================ */
+@media screen and (min-width: 1440px) {
+    .expertise-hero {
+        padding: 100px 0;
+    }
+}

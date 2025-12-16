@@ -38,13 +38,13 @@
 }
 
 .menu-desktop a.active {
-    font-family: "Avenir Next Cyr";
     color: var(--white-2, #FCFCFC);
     font-family: "Avenir Next";
     font-size: 16px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    border-bottom: 2px solid #fcfcfc;
 }
 
 .menu-desktop li {
@@ -380,6 +380,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.menu-list > li > a.active {
+    font-weight: 700;
 }
 
 /* Animação do hambúrguer para X */

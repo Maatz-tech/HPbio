@@ -1,0 +1,48 @@
+/* ================================
+   Expertise Tabs Section
+   Mobile First Approach
+   ================================ */
+
+/* Tabs Section */
+.expertise-tabs-section {
+    background-color: #f4f4f4;
+    padding: 64px 0 0;
+}
+
+/* Tab text content */
+.expertise-tab-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.expertise-tab-text p {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Spacer for footer wave overlap - Mobile SVG ratio: 45/368 = 12.228% */
+.expertise-footer-spacer {
+    width: 100%;
+    padding-bottom: 12.228%;
+    margin-top: 60px;
+}
+
+/* ================================
+   Tablet/Desktop (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .expertise-tabs-section {
+        padding: 100px 0 0;
+    }
+
+    /* Desktop SVG ratio: 69/1440 = 4.792% */
+    .expertise-footer-spacer {
+        padding-bottom: 4.792%;
+        margin-top: 80px;
+    }
+}

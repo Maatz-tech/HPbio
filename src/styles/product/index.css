@@ -1,0 +1,9 @@
+/* ================================
+   Product Page Styles
+   ================================ */
+
+/* Shared Components */
+@import "../shared/tabs.css";
+
+/* Product Page Sections */
+@import "./product-main.css";

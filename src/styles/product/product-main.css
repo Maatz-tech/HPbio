@@ -1,0 +1,484 @@
+/* ================================
+   Product Page Main Content
+   Mobile First Approach
+   ================================ */
+
+/* Product Page Layout */
+.product-page {
+    min-height: calc(100vh - 80px);
+}
+
+/* ================================
+   Hero Section
+   ================================ */
+.product-hero {
+    position: relative;
+    background: linear-gradient(to left, #cccccc, #ffffff);
+    padding: 100px 0 40px;
+    overflow: hidden;
+}
+
+/* Decoration SVG at top */
+.product-hero-decoration-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 812px;
+    line-height: 0;
+}
+
+.product-hero-decoration-top img {
+    width: 100%;
+    height: auto;
+}
+
+/* Decoration SVG at bottom - Hidden on mobile */
+.product-hero-decoration-bottom {
+    display: none;
+}
+
+/* Content */
+.product-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Info wrapper (title + subtitle) */
+.product-hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Header with accent bar and title */
+.product-hero-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.product-hero-accent {
+    width: 10px;
+    height: 72px;
+    background-color: #8cc540;
+}
+
+.product-hero-title {
+    display: flex;
+    flex-direction: column;
+    color: #4d4d4d;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.product-hero-title .light {
+    font-weight: 200;
+}
+
+.product-hero-title .bold {
+    font-weight: 800;
+}
+
+/* Subtitle */
+.product-hero-subtitle {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    line-height: normal;
+    margin: 0;
+}
+
+/* Product Image */
+.product-hero-image {
+    position: relative;
+    z-index: 2;
+    width: 312px;
+    margin: 24px auto 0;
+}
+
+.product-hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* ================================
+   Tablet/Desktop (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .product-hero {
+        padding: 120px 0 80px;
+    }
+
+    /* Top decoration - full width */
+    .product-hero-decoration-top {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+
+    /* Bottom decoration - show on tablet+ */
+    .product-hero-decoration-bottom {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        line-height: 0;
+    }
+
+    .product-hero-decoration-bottom img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Content - horizontal layout */
+    .product-hero-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+
+    /* Info takes half width */
+    .product-hero-info {
+        flex: 1;
+        gap: 16px;
+    }
+
+    .product-hero-header {
+        gap: 24px;
+    }
+
+    .product-hero-accent {
+        height: auto;
+        align-self: stretch;
+    }
+
+    .product-hero-title {
+        font-size: 80px;
+    }
+
+    .product-hero-subtitle {
+        font-size: 20px;
+    }
+
+    /* Product Image - takes half width */
+    .product-hero-image {
+        flex: 1;
+        width: auto;
+        margin-top: 0;
+        height: 450px;
+    }
+
+    .product-hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+/* ================================
+   Desktop (1440px+)
+   ================================ */
+@media screen and (min-width: 1440px) {
+    .product-hero {
+        padding: 120px 0 80px;
+    }
+}
+
+/* ================================
+   Description Section
+   ================================ */
+.product-description {
+    background-color: #fcfcfc;
+    padding: 40px 0;
+}
+
+/* Features List */
+.product-features {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px;
+}
+
+.product-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #74a335, #8cc540);
+    flex-shrink: 0;
+}
+
+.product-feature-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+.product-feature span {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4d4d4d;
+}
+
+/* Description Text */
+.product-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.product-text p {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Contents Section */
+.product-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product-contents-title {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #4d4d4d;
+    margin: 0;
+}
+
+.product-contents-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.product-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+.product-content-item img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.product-content-item span {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4d4d4d;
+    text-align: center;
+}
+
+/* Vertical divider on left items */
+.product-content-item:nth-child(odd) {
+    border-right: 1px solid #ededed;
+}
+
+/* Horizontal divider on first row */
+.product-content-item:nth-child(1),
+.product-content-item:nth-child(2) {
+    border-bottom: 1px solid #ededed;
+}
+
+/* ================================
+   Description Section - Tablet (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .product-description {
+        padding: 80px 0;
+    }
+
+    /* Features horizontal */
+    .product-features {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .product-feature {
+        flex: 1;
+    }
+
+    /* Contents grid - all in row */
+    .product-contents-grid {
+        display: flex;
+        gap: 0;
+    }
+
+    .product-content-item {
+        padding: 16px 24px;
+    }
+
+    .product-content-item img {
+        width: 64px;
+        height: 64px;
+    }
+
+    /* Reset mobile borders */
+    .product-content-item:nth-child(1),
+    .product-content-item:nth-child(2) {
+        border-bottom: none;
+    }
+
+    /* Vertical dividers between all items except last */
+    .product-content-item:nth-child(odd) {
+        border-right: 1px solid #ededed;
+    }
+
+    .product-content-item:nth-child(even):not(:last-child) {
+        border-right: 1px solid #ededed;
+    }
+
+    .product-content-item:last-child {
+        border-right: none;
+    }
+}
+
+/* ================================
+   Specifications Section
+   ================================ */
+.product-specs {
+    background-color: #ffffff;
+    border-top: 1px solid #ededed;
+    padding: 40px 0;
+}
+
+/* Spec Blocks */
+.product-spec-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product-spec-title {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #4d4d4d;
+    margin: 0;
+}
+
+.product-spec-row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.product-spec-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-spec-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-spec-text p {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Spec List */
+.product-spec-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-spec-list li {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4d4d4d;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ededed;
+}
+
+.product-spec-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Divider */
+.product-spec-divider {
+    border: none;
+    border-top: 1px solid #ededed;
+    margin: 40px 0;
+}
+
+/* Note */
+.product-spec-note {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.product-spec-note strong {
+    font-weight: 700;
+}
+
+/* ================================
+   Specifications Section - Tablet (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .product-specs {
+        padding: 80px 0;
+    }
+
+    /* Two column layout */
+    .product-spec-row {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .product-spec-image,
+    .product-spec-text {
+        flex: 1;
+    }
+
+    .product-spec-list {
+        flex: 1;
+    }
+}

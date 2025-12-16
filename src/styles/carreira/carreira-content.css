@@ -1,0 +1,113 @@
+/* ================================
+   Carreira Content Section
+   Mobile First Approach
+   ================================ */
+
+/* Content Section */
+.carreira-content {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.carreira-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+/* Text Content */
+.carreira-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.carreira-title {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.carreira-description {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Button */
+.carreira-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 12px 32px;
+    background-color: #8cc540;
+    border: none;
+    border-radius: 100px;
+    font-family: "Avenir Next", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.carreira-button:hover {
+    background-color: #7ab336;
+}
+
+/* Image */
+.carreira-image {
+    width: 100%;
+}
+
+.carreira-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ================================
+   Tablet/Desktop (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .carreira-content {
+        padding: 100px 0;
+    }
+
+    .carreira-content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 64px;
+    }
+
+    .carreira-text {
+        flex: 1;
+    }
+
+    .carreira-title {
+        font-size: 32px;
+    }
+
+    .carreira-image {
+        flex: 1;
+    }
+}
+
+/* ================================
+   Desktop (1440px+)
+   ================================ */
+@media screen and (min-width: 1440px) {
+    .carreira-content {
+        padding: 100px 0;
+    }
+}
