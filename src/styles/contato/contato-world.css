@@ -70,7 +70,6 @@
 .distributor-card {
     background-color: #fcfcfc;
     border: 1px solid #ededed;
-    border-radius: 6px;
     padding: 24px;
     display: flex;
     flex-direction: column;

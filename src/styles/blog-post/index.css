@@ -1,0 +1,427 @@
+/* ================================
+   Blog Post Page Styles
+   Mobile First Approach
+   ================================ */
+
+/* ================================
+   Blog Post Hero
+   ================================ */
+.blog-post-page {
+    background-color: #fff;
+}
+
+.blog-post-hero {
+    background-color: #fff;
+    padding: 0;
+}
+
+.blog-post-hero .container {
+    padding: 0;
+}
+
+.blog-post-hero-image {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.blog-post-hero-image > img:first-child {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-post-hero-detail {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    display: block;
+    height: 48px;
+}
+
+.blog-post-hero-detail img {
+    height: 100%;
+    width: auto;
+}
+
+/* ================================
+   Blog Post Content Section
+   ================================ */
+.blog-post-content {
+    padding: 40px 0;
+}
+
+.blog-post-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ================================
+   Article Styles
+   ================================ */
+.blog-post-article {
+    width: 100%;
+}
+
+/* Article Header */
+.blog-post-header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.blog-post-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.blog-post-accent {
+    width: 12px;
+    align-self: stretch;
+    background-color: #8cc540;
+    flex-shrink: 0;
+}
+
+.blog-post-title {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #4d4d4d;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* Article Meta */
+.blog-post-meta {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.blog-post-author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.author-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name {
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #97989f;
+}
+
+.blog-post-date {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+}
+
+/* Article Body */
+.blog-post-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.blog-post-body p {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.blog-post-body h2 {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4d4d4d;
+    margin: 16px 0 0 0;
+}
+
+/* Blockquote */
+.blog-post-quote {
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 16px 0;
+    border: none;
+    position: relative;
+}
+
+.blog-post-quote::before {
+    content: "";
+    width: 5px;
+    background-color: #8cc540;
+    flex-shrink: 0;
+}
+
+.blog-post-quote p {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: #4d4d4d;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Article Figure/Image */
+.blog-post-figure {
+    width: 100%;
+    margin: 16px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 1200 / 450;
+}
+
+.blog-post-figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Share Section */
+.blog-post-share {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-top: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #ededed;
+}
+
+.share-label {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #6e6f71;
+}
+
+.share-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #4d4d4d;
+    transition: opacity 0.2s ease;
+}
+
+.share-btn:hover {
+    opacity: 0.8;
+}
+
+.share-btn.share-x {
+    background-color: transparent;
+}
+
+.share-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.share-btn.share-x svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* ================================
+   Sidebar / Related Posts
+   ================================ */
+.blog-post-sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 40px;
+    border-top: 1px solid #ededed;
+}
+
+.sidebar-title {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #4d4d4d;
+    margin: 0;
+}
+
+.related-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Related Post Card */
+.related-post {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.related-post-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.related-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.related-post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.related-post-title {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4d4d4d;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.related-post-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.related-post-title a:hover {
+    text-decoration: underline;
+}
+
+.related-post-date {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6e6f71;
+}
+
+.related-post-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: "Avenir Next", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.related-post-link:hover {
+    text-decoration: underline;
+}
+
+.related-post-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* ================================
+   Tablet (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    .blog-post-hero {
+        padding: 32px 0 24px;
+    }
+
+    .blog-post-hero .container {
+        padding: 0 40px;
+    }
+
+    .blog-post-hero-image {
+        height: 375px;
+    }
+
+    .blog-post-hero-detail {
+        left: auto;
+        right: -1px;
+    }
+
+    .blog-post-content {
+        padding: 40px 0 100px;
+    }
+
+    .blog-post-title {
+        font-size: 36px;
+    }
+
+    .blog-post-sidebar {
+        border-top: none;
+        padding-top: 0;
+    }
+}
+
+/* ================================
+   Desktop (1440px+)
+   ================================ */
+@media screen and (min-width: 1440px) {
+    .blog-post-hero .container {
+        padding: 0 120px;
+    }
+
+    .blog-post-hero-image {
+        margin: 0 auto;
+    }
+
+    .blog-post-content .container {
+        padding: 0 120px;
+    }
+
+    .blog-post-layout {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 64px;
+    }
+
+    .blog-post-article {
+        width: 690px;
+        flex-shrink: 0;
+    }
+
+    .blog-post-title-wrapper {
+        gap: 24px;
+    }
+
+    .blog-post-title {
+        font-size: 48px;
+    }
+
+    .blog-post-sidebar {
+        width: 387px;
+        flex-shrink: 0;
+    }
+
+    .sidebar-title {
+        font-size: 32px;
+    }
+}

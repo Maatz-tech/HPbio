@@ -17,7 +17,7 @@
 .section-header-title::before {
     content: "";
     display: block;
-    width: 6px;
+    width: 10px;
     height: 48px;
     background-color: #8cc540;
     flex-shrink: 0;

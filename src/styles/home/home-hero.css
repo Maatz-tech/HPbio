@@ -3,55 +3,35 @@
    ================================ */
 .hero-carousel {
     margin: 0 auto;
+    padding-top: 40px;
 }
 
+/* Mobile: grid layout - [prev] [text] [next] row, image below */
 .carousel-container {
     position: relative;
     width: 100%;
-    height: 320px;
+    display: grid;
+    grid-template-columns: 24px 1fr 24px;
+    grid-template-rows: auto auto;
+    column-gap: 14px;
+    row-gap: 10px;
+    align-items: center;
+    padding: 0 8px;
     overflow: hidden;
-    background-color: #f5f5f5;
-}
-
-.carousel-slides {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
-
-.carousel-slide.active {
-    opacity: 1;
-    visibility: visible;
 }
 
 .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 40px;
-    transform: translateY(-50%);
-    max-width: calc(100% - 80px);
-    padding-left: 18px;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 24px 0;
+    padding-left: 24px;
     border-left: 6px solid #8cc540;
     z-index: 10;
 }
 
 .hero-text h1 {
     font-family: "Avenir Next Cyr";
-    font-size: 32px;
+    font-size: 24px;
     text-transform: uppercase;
     color: #4d4d4d;
     margin: 0 0 8px 0;
@@ -83,10 +63,46 @@
     max-width: 400px;
 }
 
-.carousel-nav {
+.carousel-slides {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    width: calc(100% + 16px);
+    margin-left: -8px;
+    margin-right: -8px;
+    overflow: hidden;
+}
+
+.carousel-slide {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-slide picture {
+    display: block;
+    width: 100%;
+}
+
+.carousel-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-nav {
+    grid-row: 1;
+    position: relative;
     width: 24px;
     height: 24px;
     background: transparent;
@@ -112,11 +128,11 @@
 }
 
 .carousel-prev {
-    left: 8px;
+    grid-column: 1;
 }
 
 .carousel-next {
-    right: 8px;
+    grid-column: 3;
 }
 
 .carousel-decoration {
@@ -127,28 +143,58 @@
     pointer-events: none;
 }
 
-.carousel-decoration-top {
-    top: 0;
+.carousel-decoration-top-desktop {
     display: none;
+}
+
+.carousel-decoration-top-mobile {
+    display: block;
+    position: absolute;
+    bottom: 194px;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    z-index: 6;
+    pointer-events: none;
 }
 
 .carousel-decoration-bottom {
     bottom: 0;
+    display: none;
 }
 
-/* Mobile: show mobile SVG, hide desktop SVG */
 .carousel-decoration-bottom-desktop {
     display: none;
 }
 
-/* Tablet (768px+) */
+.carousel-decoration-bottom-mobile {
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    z-index: 6;
+    pointer-events: none;
+}
+
+/* Tablet (768px+) - Original layout */
 @media screen and (min-width: 768px) {
-    /* Show top decoration on tablet+ */
-    .carousel-decoration-top {
+    .carousel-decoration-top-mobile {
+        display: none;
+    }
+
+    .carousel-decoration-top-desktop {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .carousel-decoration-bottom {
         display: block;
     }
 
-    /* Switch to desktop SVG */
     .carousel-decoration-bottom-mobile {
         display: none;
     }
@@ -159,17 +205,36 @@
 
     .hero-carousel {
         margin: 24px auto 0;
+        padding-top: 0;
     }
 
     .carousel-container {
-        height: 375px;
-        border-radius: 16px;
+        display: block;
+        position: relative;
+        background-color: #f5f5f5;
+        padding: 0;
+        row-gap: 0;
+        column-gap: 0;
+    }
+
+    .carousel-slides {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .hero-text {
+        position: absolute;
+        top: 50%;
         left: 80px;
+        transform: translateY(-50%);
         max-width: 500px;
+        padding: 0;
         padding-left: 24px;
+        margin: 0;
+        grid-column: unset;
+        grid-row: unset;
     }
 
     .hero-text h1 {
@@ -182,8 +247,13 @@
     }
 
     .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         width: 40px;
         height: 40px;
+        grid-row: unset;
+        grid-column: unset;
     }
 
     .carousel-nav svg {
@@ -193,10 +263,13 @@
 
     .carousel-prev {
         left: 24px;
+        right: auto;
+        grid-column: unset;
     }
 
     .carousel-next {
         right: 24px;
+        grid-column: unset;
     }
 }
 
@@ -207,7 +280,7 @@
     }
 
     .carousel-container {
-        height: 450px;
+        /* height determined by image aspect ratio */
     }
 
     .hero-text {

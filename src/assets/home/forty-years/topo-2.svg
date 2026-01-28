@@ -1,11 +1,17 @@
-<svg width="1920" height="130" viewBox="0 0 1920 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_287_965)">
-<path d="M1919.86 63.9045H1232.17C1078.76 63.9045 998.74 129.333 882.679 129.333H0.0357735V0H1919.86V63.9045Z" fill="white"/>
-<path d="M1919.96 34.6836H1105.98C952.576 34.6836 872.557 94.5941 756.496 94.5941H4.12293e-05" stroke="#C2C2C2" stroke-width="2" stroke-miterlimit="10"/>
+<svg width="1920" height="124" viewBox="0 0 1920 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2038_925)">
+<path d="M1920 38.9741H1271.68C1081.9 38.9741 982.88 114 839.309 114H0V-15H1920V38.9741Z" fill="#EBEBEC"/>
+<g clip-path="url(#clip1_2038_925)">
+<path d="M1919.86 18.9045H1232.17C1078.76 18.9045 998.741 84.3333 882.679 84.3333H0.0357666V-45H1919.86V18.9045Z" fill="white"/>
+<path d="M1919.96 1.68359H1105.98C952.576 1.68359 872.557 61.5941 756.496 61.5941H4.12293e-05" stroke="#C2C2C2" stroke-width="2" stroke-miterlimit="10"/>
+</g>
 </g>
 <defs>
-<clipPath id="clip0_287_965">
-<rect width="1919.96" height="129.333" fill="white" transform="matrix(-1 0 0 1 1919.96 0)"/>
+<clipPath id="clip0_2038_925">
+<rect width="1920" height="124" fill="white" transform="matrix(1 0 0 -1 0 124)"/>
+</clipPath>
+<clipPath id="clip1_2038_925">
+<rect width="1920" height="129.333" fill="white" transform="matrix(-1 0 0 1 1920 -45)"/>
 </clipPath>
 </defs>
 </svg>

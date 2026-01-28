@@ -16,11 +16,19 @@
 }
 
 .forty-years-decoration-top {
-    top: 0;
+    top: -1px;
+    height: auto;
+    display: block;
 }
 
 .forty-years-decoration-bottom {
-    bottom: 0;
+    bottom: -1px;
+    height: auto;
+    display: block;
+}
+
+.forty-years-blend {
+    mix-blend-mode: multiply;
 }
 
 .forty-years-decoration-mobile {

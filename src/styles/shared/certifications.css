@@ -1,33 +1,20 @@
 /* ================================
    Shared Certifications Component
-   Mobile: Horizontal scroll-snap carousel
-   Desktop: Grid layout
+   Mobile: Vertical stack
+   Tablet: 2 columns
+   Desktop: 5 columns
    ================================ */
 
-/* Certifications Grid - Mobile: Horizontal scroll-snap carousel */
+/* Certifications Grid - Mobile: Vertical stack */
 .certifications-grid {
     display: flex;
+    flex-direction: column;
     gap: 16px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    /* Negative margin to extend beyond container, padding to maintain scroll position */
-    margin: 0 -24px;
-    padding: 0 24px 16px 24px;
-    scroll-padding-left: 24px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.certifications-grid::-webkit-scrollbar {
-    display: none;
 }
 
 /* Certification Card */
 .certification-card {
-    flex: 0 0 200px;
-    min-width: 200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,8 +22,6 @@
     padding: 24px;
     background-color: #fff;
     border: 1px solid #ededed;
-    border-radius: 8px;
-    scroll-snap-align: start;
 }
 
 .certification-logo {
@@ -77,18 +62,16 @@
 @media screen and (min-width: 768px) {
     .certifications-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
         gap: 16px;
-        overflow-x: visible;
-        scroll-snap-type: none;
-        margin: 0;
-        padding: 0;
     }
 
-    .certification-card {
-        flex: none;
-        min-width: unset;
-        scroll-snap-align: none;
+    /* Centraliza o item solo na última linha (5 itens = 2+2+1) */
+    .certification-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        max-width: calc(50% - 8px);
+        justify-self: center;
     }
 }
 
@@ -98,5 +81,12 @@
 @media screen and (min-width: 1440px) {
     .certifications-grid {
         grid-template-columns: repeat(5, 1fr);
+    }
+
+    /* Remove centralização do item solo no desktop (5 colunas = todos na mesma linha) */
+    .certification-card:last-child:nth-child(odd) {
+        grid-column: auto;
+        max-width: none;
+        justify-self: auto;
     }
 }

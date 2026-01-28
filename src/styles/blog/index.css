@@ -1,0 +1,360 @@
+/* ================================
+   Blog Page Styles
+   Mobile First Approach
+   ================================ */
+
+/* ================================
+   Blog Hero Section
+   ================================ */
+.blog-hero {
+    position: relative;
+    background: linear-gradient(to left, #cccccc, #ffffff);
+    padding: 64px 0 40px;
+    overflow: hidden;
+}
+
+/* Decoration SVG at top */
+.blog-hero-decoration-top {
+    position: absolute;
+    top: 0px;
+    min-width: 812px;
+    width: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    line-height: 0;
+}
+
+.blog-hero-decoration-top img {
+    width: 100%;
+    height: auto;
+}
+
+/* Decoration SVG at bottom - Hidden on mobile */
+.blog-hero-decoration-bottom {
+    display: none;
+}
+
+/* Content */
+.blog-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header with accent bar and title */
+.blog-hero-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.blog-hero-accent {
+    width: 10px;
+    height: 48px;
+    background-color: #8cc540;
+}
+
+.blog-hero-title {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+}
+
+.blog-hero-title .light {
+    font-weight: 400;
+}
+
+.blog-hero-title .bold {
+    font-weight: 800;
+}
+
+/* ================================
+   Blog Posts Section
+   ================================ */
+.blog-posts {
+    background-color: #fff;
+    padding: 40px 0 60px;
+}
+
+/* Section Header */
+.blog-section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.blog-section-accent {
+    width: 10px;
+    height: 32px;
+    background-color: #8cc540;
+}
+
+.blog-section-title {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #4d4d4d;
+    margin: 0;
+}
+
+/* Blog Grid - Mobile: 1 column */
+.blog-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Blog Card */
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.blog-card-image {
+    position: relative;
+    aspect-ratio: 312 / 220;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.blog-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.blog-card-title {
+    position: relative;
+    z-index: 1;
+    font-family: "Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.blog-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ededed;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    flex: 1;
+}
+
+.blog-card-description {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.blog-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "Avenir Next Cyr";
+    font-size: 16px;
+    font-weight: 600;
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.blog-card-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* ================================
+   Pagination
+   ================================ */
+.blog-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid #ededed;
+}
+
+.pagination-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    font-family: "Avenir Next", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4d4d4d;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    opacity: 0.7;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.pagination-numbers {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.pagination-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-family: "Avenir Next", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4d4d4d;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.pagination-number:hover {
+    background-color: rgba(140, 197, 64, 0.1);
+}
+
+.pagination-number.active {
+    background-color: rgba(140, 197, 64, 0.2);
+}
+
+.pagination-ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-family: "Avenir Next", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+
+/* ================================
+   Tablet (768px+)
+   ================================ */
+@media screen and (min-width: 768px) {
+    /* Hero */
+    .blog-hero {
+        padding: 100px 0;
+    }
+
+    .blog-hero-decoration-top {
+        width: 100%;
+    }
+
+    .blog-hero-decoration-bottom {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        line-height: 0;
+    }
+
+    .blog-hero-decoration-bottom img {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-hero-header {
+        gap: 24px;
+    }
+
+    .blog-hero-accent {
+        height: 56px;
+    }
+
+    .blog-hero-title {
+        font-size: 56px;
+    }
+
+    /* Posts Section */
+    .blog-posts {
+        padding: 60px 0 80px;
+    }
+
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .blog-card-image {
+        padding: 20px 24px;
+    }
+
+    .blog-card-title {
+        font-size: 17px;
+    }
+
+    .blog-card-content {
+        gap: 24px;
+        padding: 24px;
+    }
+
+}
+
+/* ================================
+   Desktop (1440px+)
+   ================================ */
+@media screen and (min-width: 1440px) {
+    /* Hero */
+    .blog-hero {
+        padding: 100px 0;
+    }
+
+    /* Posts Section */
+    .blog-posts {
+        padding: 80px 0;
+    }
+
+    .blog-section-header {
+        margin-bottom: 40px;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .blog-card-title {
+        font-size: 18px;
+    }
+}

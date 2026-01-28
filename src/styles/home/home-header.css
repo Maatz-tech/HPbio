@@ -19,6 +19,10 @@
     height: 100%;
 }
 
+.logo img {
+    max-height: 48px;
+}
+
 .menu-desktop {
     display: none;
     margin: 0 auto;

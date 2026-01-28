@@ -18,8 +18,14 @@
     width: 100%;
     height: auto;
     display: block;
-    /* Fix subpixel gap on mobile only */
-    margin-bottom: -2px;
+    /* Fix subpixel gap */
+    margin-bottom: -1px;
+}
+
+/* Ensure no white gap between decoration and footer */
+.footer-decoration + .footer {
+    margin-top: -20px;
+    padding-top: 60px;
 }
 
 /* Mobile: show mobile SVG, hide desktop SVG */
@@ -227,7 +233,7 @@
     }
 
     .footer-decoration img {
-        margin-bottom: 0;
+        margin-bottom: -1px;
     }
 
     /* Switch to desktop SVG */
@@ -240,7 +246,7 @@
     }
 
     .footer {
-        padding: 60px 40px;
+        padding: 80px 40px 60px;
     }
 
     .footer-content {
@@ -307,7 +313,7 @@
 /* Desktop (1440px+) */
 @media screen and (min-width: 1440px) {
     .footer {
-        padding: 80px 120px;
+        padding: 100px 120px 80px;
     }
 
     .footer-columns {

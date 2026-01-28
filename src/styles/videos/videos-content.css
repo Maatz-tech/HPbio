@@ -52,7 +52,6 @@
 .video-card-thumbnail {
     position: relative;
     height: 180px;
-    border-radius: 8px;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
@@ -80,7 +79,6 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
-    border-radius: 8px;
 }
 
 .video-card-name {
