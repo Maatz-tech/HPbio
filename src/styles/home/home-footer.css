@@ -6,12 +6,24 @@
 .footer-decoration {
     width: 100%;
     line-height: 0;
+    background-color: #f4f4f4; /* Default: gray background */
 }
 
-/* Overlap modifier - only for pages with certifications spacer (home) */
+/* White background modifier for pages with white section before footer */
+.footer-decoration--white {
+    background-color: #ffffff;
+}
+
+/* Overlap modifier - for pages with footer spacer */
 .footer-decoration--overlap {
-    /* Pull up to overlap certifications spacer - Mobile SVG ratio: 45/368 = 12.228% */
+    /* Pull up to overlap footer spacer - Mobile SVG ratio: 45/368 = 12.228% */
     margin-top: -12.228%;
+}
+
+/* Home page - overlap section with transparent bg so gradient shows through */
+.footer-decoration--home {
+    background-color: transparent;
+    margin-top: -100px;
 }
 
 .footer-decoration img {

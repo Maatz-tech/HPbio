@@ -84,10 +84,10 @@
     margin: 0;
 }
 
-/* Spacer for footer wave overlap - Mobile SVG ratio: 45/368 = 12.228% */
+/* Spacer for footer wave overlap - Mobile SVG ratio: 45/368 = 12.228% + 100px for footer overlap */
 .certifications-footer-spacer {
     width: 100%;
-    padding-bottom: 12.228%;
+    padding-bottom: calc(12.228% + 100px);
     margin-top: 60px;
 }
 
@@ -97,9 +97,9 @@
         padding: 60px 0 0;
     }
 
-    /* Desktop SVG ratio: 69/1440 = 4.792% */
+    /* Desktop SVG ratio: 69/1440 = 4.792% + 100px for footer overlap */
     .certifications-footer-spacer {
-        padding-bottom: 4.792%;
+        padding-bottom: calc(4.792% + 100px);
         margin-top: 80px;
     }
 
